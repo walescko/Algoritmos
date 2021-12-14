@@ -1,6 +1,8 @@
-import Java.util.*;
+package com.company.cap10;
 
-public class Cap10_Prog1 {
+import java.util.Scanner;
+
+public class Prog_10 {
 
     public static void main(String [] args){
 
@@ -36,7 +38,7 @@ public class Cap10_Prog1 {
             } else {
                 System.out.println(vetNomeAluno[contadorAlunos] + " - Você está reprovado.");
             }
-        System.out.prinln();
+            System.out.println();
         }
 
         mediaTurma = acumulaMedia / contadorAlunos;
@@ -57,3 +59,4 @@ public class Cap10_Prog1 {
 
     }
 }
+
