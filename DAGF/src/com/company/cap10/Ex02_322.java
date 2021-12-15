@@ -6,7 +6,7 @@ package com.company.cap10;
 import java.util.Scanner;
 
 public class Ex02_322 {
-gi
+
     public static void main(String[] args){
 
         Scanner scan = new Scanner(System.in);
