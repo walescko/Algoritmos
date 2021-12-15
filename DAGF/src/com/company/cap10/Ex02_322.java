@@ -42,6 +42,26 @@ public class Ex02_322 {
                     System.out.println();
                 }
         }
+
+        somaMatriz = new Integer[n][m];
+
+        for (int i = 0; i <n ; i++){
+            for (int j = 0; j < m ; j++){
+                k=0;
+                somaMatriz[i][j] = matriz[k][i][j] + matriz[k+1][i][j];
+            }
+        }
+
+        System.out.println("Soma das Matrizes 1 e 2:");
+        for (int i = 0; i <n ; i++){
+            for (int j = 0; j < m ; j++){
+                System.out.print(somaMatriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+
     }
 }
 
