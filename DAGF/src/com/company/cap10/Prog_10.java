@@ -19,8 +19,8 @@ public class Prog_10 {
         System.out.println("");
         System.out.println("Processa a média final de 10 alunos");
 
-        for (contadorAlunos = 0; contadorAlunos <10; contadorAlunos++ ){ //aqui declararia o contador dentro do loop
-            System.out.print("Entre com o nome do aluno:" + (contadorAlunos+1) + ": ");
+        for (contadorAlunos = 0; contadorAlunos <10; contadorAlunos++ ){
+            System.out.print("Entre com o nome do aluno " + (contadorAlunos+1) + ": ");
             vetNomeAluno[contadorAlunos] = scan.next();
             System.out.print("Informe a nota bimestral 1: ");
             matNotas[contadorAlunos][0] = scan.nextDouble();
@@ -49,11 +49,12 @@ public class Prog_10 {
 
         for (contadorAlunos = 0; contadorAlunos <10; contadorAlunos++){
             if (matNotas[contadorAlunos][2] > mediaTurma){
-                System.out.println(vetNomeAluno + " - Média: " + matNotas[contadorAlunos][2] + "- Bom aluno");
+                System.out.println(vetNomeAluno + " - Média: " + matNotas[contadorAlunos][2] + " - Bom aluno");
             } else if (matNotas[contadorAlunos][2] < mediaTurma){
-                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + "- Aluno com baixo desempenho");
+                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno com baixo desempenho");
             } else {
-                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + "- Aluno mediano");//aqui tem um erro na formatação
+                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno mediano");
+
             }
         }
 
