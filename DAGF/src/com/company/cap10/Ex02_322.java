@@ -13,7 +13,7 @@ public class Ex02_322 {
 
         Integer matriz[][][];
         Integer somaMatriz[][];
-        Integer k, n, m; //tamanho da matriz
+        int k, n, m; //tamanho da matriz
 
         System.out.print("Qual a quantidade de linhas das matrizes? ");
         n = scan.nextInt();
@@ -45,15 +45,15 @@ public class Ex02_322 {
 
         somaMatriz = new Integer[n][m];
 
+        k=0;
         for (int i = 0; i <n ; i++){
             for (int j = 0; j < m ; j++){
-                k=0;
                 somaMatriz[i][j] = matriz[k][i][j] + matriz[k+1][i][j];
             }
         }
 
         System.out.println("Soma das Matrizes 1 e 2:");
-        for (int i = 0; i <n ; i++){
+        for (int i = 0; i < n ; i++){
             for (int j = 0; j < m ; j++){
                 System.out.print(somaMatriz[i][j] + " ");
             }
