@@ -10,12 +10,13 @@ public class Prog01 {
 
         int x, y;
 
-        System.out.println("Digite um número: ");
+        System.out.print("Digite um número: ");
         x = scan.nextInt();
-        System.out.println(("Digite outro número: "));
+        System.out.print(("Digite outro número: "));
+        y = scan.nextInt();
 
         if (x > y) {
-            System.out.println("Esse é o maior" + x);
+            System.out.println("Esse é o maior " + x);
         } else {
             System.out.println("Esse é o maior " + y);
         }
