@@ -12,13 +12,20 @@ public class Prog01 {
 
         System.out.print("Digite um número: ");
         x = scan.nextInt();
-        System.out.print(("Digite outro número: "));
+        System.out.print("Digite outro número: ");
         y = scan.nextInt();
 
+//      Essa parte é do capítulo 1
         if (x > y) {
             System.out.println("Esse é o maior " + x);
         } else {
             System.out.println("Esse é o maior " + y);
         }
+
+//      Essa parte é do capítulo 2
+        int soma = x + y;
+        System.out.println("A soma entre " + x + " e " + y + " é " + soma );
+
+
     }
 }
