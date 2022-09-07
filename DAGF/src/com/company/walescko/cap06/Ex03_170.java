@@ -34,6 +34,8 @@ public class Ex03_170 {
         if (denominador == 0){
             System.out.println("Sistema sem solução");
         } else {
+            System.out.println(df.format(a) + "x + " + df.format(b) + "y = " + df.format(c));
+            System.out.println(df.format(d) + "x + " + df.format(e) + "y = " + df.format(f));
             System.out.println("A solução do sistema é :");
             x = (c*e - b*f)/denominador;
             y = (a*f - c*d)/denominador;
