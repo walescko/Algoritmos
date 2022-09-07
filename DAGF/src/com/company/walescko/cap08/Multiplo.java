@@ -10,6 +10,6 @@ public class Multiplo {
 
         System.out.print("Digite um numero: ");
         numero = scan.nextInt();
-        
+
     }
 }

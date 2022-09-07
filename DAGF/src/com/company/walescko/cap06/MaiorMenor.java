@@ -10,6 +10,7 @@ public class MaiorMenor {
 
         Scanner scan = new Scanner(System.in);
 
+        System.out.println("Maior e Menor - exemplo Cap 06 - p. 167");
         System.out.println("Digite dois números inteiros:");
         System.out.print("A: ");
         numero1 = scan.nextInt();
