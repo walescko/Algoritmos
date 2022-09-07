@@ -11,7 +11,8 @@ public class Calculadora {//Calculadora outra vez... em java...
         int numeroA, numeroB;
         char opcao;
         String escolha, saida ="";
-        
+
+        System.out.println("Exemplo Capítulo 07 - Estruturas Aninhadas - Calculadora");
         System.out.println("Digite dois numeros e a operação (+, -, * , /):");
         System.out.print("Numero A: ");
         numeroA = scan.nextInt();

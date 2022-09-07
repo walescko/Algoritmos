@@ -10,6 +10,7 @@ public class Triangulo {
 
         Scanner scan = new Scanner(System.in);
 
+        System.out.println("Exemplo Capítulo 07 - Estruturas Aninhadas - Triângulo");
         System.out.println("Digite o valor dos lados do triangulo:");
         System.out.print("Lado A: ");
         ladoA = scan.nextInt();
