@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void main(){
-    //falta o controle de encerramento do programa
     int eleitores; //total de eleitores
     int veleitores; //eleitores que votaram
     float peleitores; //percentual que votaram
@@ -33,6 +32,8 @@ void main(){
         printf("Gilbert Blate - núemro 12\n");
         printf("Digite o número do seu canditado: ");
         scanf("%d",&voto);
+        
+//         nessa parte do código ficará mais legível se usar o comando switch case
         if (voto == 11) {
             cadA = cadA + 1;
         } else if (voto == 12) {
@@ -45,16 +46,20 @@ void main(){
         
         veleitores = veleitores + 1;
         
-        printf("Para encerrar digite o código: ");
-        scanf("%d",&encerra);
+//         printf("Para encerrar digite o código: ");
+//         scanf("%d",&encerra);
         
         if (veleitores == eleitores-1){
             printf("\nFalta somente 1 eleitor para votar\n");
             printf("O programa se encerra automáticamente após \no último eleitor votar\n");
-        } 
-        if (veleitores == eleitores){
-            encerra = code;
+        } else {
+            printf("\nDigite o código de encerramenot ou 777 para continuar ");
+            scanf("%d", &encerra);
         }
+        
+//         if (veleitores == eleitores){
+//             encerra = code;
+        
         } while (encerra != code );
         
         peleitores = ((float)veleitores / (float)eleitores) * 100;
