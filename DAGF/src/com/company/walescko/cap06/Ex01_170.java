@@ -14,9 +14,9 @@ public class Ex01_170 {
         number = scan.nextInt();
 
         if (number % 2 == 0) {
-            System.out.println("O número " + number + " é par!");
+            System.out.printf("O número %s é par",number);
         } else {
-            System.out.println("O número " + number + " é ímpar!");
+            System.out.printf("O número %s é ímpar!", number);
 
         }
     }

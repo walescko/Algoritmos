@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Ex03_170 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("00.000");
 
         double a, b, c, d, e, f, x, y;
         double denominador;
@@ -34,13 +33,13 @@ public class Ex03_170 {
         if (denominador == 0){
             System.out.println("Sistema sem solução");
         } else {
-            System.out.println(df.format(a) + "x + " + df.format(b) + "y = " + df.format(c));
-            System.out.println(df.format(d) + "x + " + df.format(e) + "y = " + df.format(f));
+            System.out.printf("%s x + %s y = %s", a, b, c);
+            System.out.printf("%s x +  %s y = %s", d, e, f);
             System.out.println("A solução do sistema é :");
             x = (c*e - b*f)/denominador;
             y = (a*f - c*d)/denominador;
-            System.out.println("x = " + df.format(x));
-            System.out.println("y = " + df.format(y));
+            System.out.printf("x = %s", x);
+            System.out.printf("y = %s", y);
         }
     }
 }
