@@ -49,15 +49,13 @@ public class Prog_10 {
 
         for (contadorAlunos = 0; contadorAlunos <10; contadorAlunos++){
             if (matNotas[contadorAlunos][2] > mediaTurma){
-                System.out.println(vetNomeAluno + " - Média: " + matNotas[contadorAlunos][2] + " - Bom aluno");
+                System.out.println(vetNomeAluno[contadorAlunos]+ " - Média: " + matNotas[contadorAlunos][2] + " - Bom aluno");
             } else if (matNotas[contadorAlunos][2] < mediaTurma){
-                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno com baixo desempenho");
+                System.out.println(vetNomeAluno[contadorAlunos] +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno com baixo desempenho");
             } else {
-                System.out.println(vetNomeAluno +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno mediano");
-
+                System.out.println(vetNomeAluno[contadorAlunos] +  " - Média: " + matNotas[contadorAlunos][2] + " - Aluno mediano");
             }
         }
-
     }
 }
 

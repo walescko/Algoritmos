@@ -10,18 +10,18 @@ public class MultiploFor {
 
         System.out.print("Digite um numero: ");
         numero = scan.nextInt();
-        System.out.printf("Valor Lido: %s", numero);
+        System.out.printf("Valor Lido: %s\n", numero);
         System.out.println("Lista de Multiplos: ");
 
         soma = 0;
 
-        for (int i; i <= 10; i++){
-            multiplo = i*numero;
+        for (int i=0; i < 10; i++){
+            multiplo = (i+1)*numero;
             System.out.printf(" %s", multiplo);
             soma += multiplo;
         }
 
-        System.out.printf("Soma = %s", soma);
+        System.out.printf("\nSoma = %s", soma);
 
     }
 }

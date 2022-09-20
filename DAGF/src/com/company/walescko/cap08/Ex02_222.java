@@ -62,7 +62,6 @@ public class Ex02_222 {
 
             if (votaram == eleitores){
                encerramento = codeAbertura;
-
             }
 
         } while (encerramento != codeFechamento);

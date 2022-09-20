@@ -10,7 +10,7 @@ public class MultiploWhile {
 
         System.out.print("Digite um numero: ");
         numero = scan.nextInt();
-        System.out.printf("Valor Lido: %s", numero);
+        System.out.printf("Valor Lido: %s\n", numero);
         System.out.println("Lista de Multiplos: ");
 
         soma = 0;
@@ -22,7 +22,7 @@ public class MultiploWhile {
             i++;
         }
 
-        System.out.printf("Soma = %s", soma);
+        System.out.printf("\nSoma = %s", soma);
 
     }
 }
