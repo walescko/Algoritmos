@@ -45,10 +45,7 @@ void main(){
         }
         
         veleitores = veleitores + 1;
-        
-//         printf("Para encerrar digite o código: ");
-//         scanf("%d",&encerra);
-        
+
         if (veleitores == eleitores-1){
             printf("\nFalta somente 1 eleitor para votar\n");
             printf("O programa se encerra automáticamente após \no último eleitor votar\n");
@@ -56,10 +53,7 @@ void main(){
             printf("\nDigite o código de encerramenot ou 777 para continuar ");
             scanf("%d", &encerra);
         }
-        
-//         if (veleitores == eleitores){
-//             encerra = code;
-        
+
         } while (encerra != code );
         
         peleitores = ((float)veleitores / (float)eleitores) * 100;
